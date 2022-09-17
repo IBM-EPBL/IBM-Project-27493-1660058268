@@ -1,1 +1,3 @@
 - Member assignments files
+- Name : Shaik Mohammed Ashik
+- Role : Team Member
