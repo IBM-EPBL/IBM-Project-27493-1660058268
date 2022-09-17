@@ -1,1 +1,3 @@
-Member assignments files
+- Member assignments files
+- Name : Puram Chandra Sekhar
+- Role : Team Member
