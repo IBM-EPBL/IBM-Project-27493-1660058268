@@ -15,10 +15,12 @@ model=Sequential()
 model.add(Convolution2D(32,(3,3),input_shape=(128,128,3),activation='relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Flatten())
-model.add(Dense(units=40,kernel_initializer='uniform',activation='relu'))
-model.add(Dense(units=70,kernel_initializer='random_uniform',activation='relu'))
-model.add(Dense(units=6,kernel_initializer='random_uniform',activation='softmax'))
+model.add(Dense(units=300,kernel_initializer='uniform',activation='relu'))
+model.add(Dense(units=150,kernel_initializer='uniform',activation='relu'))
+model.add(Dense(units=75,kernel_initializer='uniform',activation='relu'))
+model.add(Dense(units=9,kernel_initializer='uniform',activation='softmax'))
 model.compile(loss='categorical_crossentropy',optimizer="adam",metrics=["accuracy"])
+
 model.fit(x_train,steps_per_epoch=168,epochs=3,validation_data=x_test,validation_steps=52)
 
 
